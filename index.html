@@ -6,18 +6,18 @@
 <title>MYLAV — Étude de Marché Vétérinaire France 2025</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
   :root{--navy:#0D1B2A;--blue:#1B4F8A;--accent:#2E86AB;--teal:#00B4D8;--green:#06D6A0;--amber:#FFB703;--red:#EF476F;--card:#ffffff;--border:#E2EAF4;--text:#1A2A3A;--muted:#607080;}
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Inter',sans-serif;background:#F0F4F8;color:var(--text);}
+  body{font-family:'DM Sans',sans-serif;background:#F0F4F8;color:var(--text);}
   .header{background:linear-gradient(135deg,var(--navy) 0%,#1B3A5C 60%,var(--blue) 100%);padding:32px 48px 28px;position:relative;overflow:hidden;}
   .header::before{content:'';position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(46,134,171,0.15);}
   .header-inner{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1;}
-  .logo{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:#fff;letter-spacing:-1px;}
+  .logo{font-family:'Instrument Serif',serif;font-size:36px;font-weight:800;color:#fff;letter-spacing:-1px;}
   .logo span{color:var(--teal);}
   .header-meta{text-align:right;}
   .header-meta .badge{background:rgba(0,180,216,0.2);border:1px solid rgba(0,180,216,0.4);color:var(--teal);padding:4px 14px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;display:inline-block;margin-bottom:6px;}
-  .header-meta h1{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:#fff;}
+  .header-meta h1{font-family:'Instrument Serif',serif;font-size:22px;font-weight:700;color:#fff;}
   .header-meta p{color:rgba(255,255,255,0.55);font-size:13px;margin-top:2px;}
   .nav-tabs{background:var(--navy);padding:0 48px;display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.08);}
   .nav-tab{padding:14px 22px;color:rgba(255,255,255,0.45);font-size:13px;font-weight:500;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;}
@@ -35,7 +35,7 @@
   .kpi-card.amber::before{background:var(--amber);}
   .kpi-card.red::before{background:var(--red);}
   .kpi-label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;}
-  .kpi-value{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--text);line-height:1;}
+  .kpi-value{font-family:'Instrument Serif',serif;font-size:26px;font-weight:800;color:var(--text);line-height:1;}
   .kpi-sub{font-size:12px;color:var(--muted);margin-top:6px;}
   .kpi-trend{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px;margin-top:8px;}
   .kpi-trend.up{background:rgba(6,214,160,0.12);color:#059669;}
@@ -45,7 +45,7 @@
   .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:20px;}
   .grid-1-2{display:grid;grid-template-columns:1fr 2fr;gap:20px;margin-bottom:20px;}
   .card{background:var(--card);border-radius:14px;padding:24px;border:1px solid var(--border);margin-bottom:0;}
-  .card-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+  .card-title{font-family:'Instrument Serif',serif;font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;}
   .card-title .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
   .card-title .dot.blue{background:var(--blue);}
   .card-title .dot.teal{background:var(--teal);}
@@ -73,7 +73,7 @@
   .prog-val{font-size:13px;font-weight:600;color:var(--text);min-width:42px;text-align:right;}
   .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
   .comp-card{border:1px solid var(--border);border-radius:10px;padding:16px;}
-  .comp-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .comp-name{font-family:'Instrument Serif',serif;font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;}
   .comp-type{font-size:11px;color:var(--muted);margin-bottom:10px;}
   .comp-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;letter-spacing:0.3px;}
   .comp-tag.leader{background:rgba(27,79,138,0.1);color:var(--blue);}
@@ -98,7 +98,7 @@
   .warn-box{background:rgba(239,71,111,0.04);border:1px dashed rgba(239,71,111,0.35);border-radius:10px;padding:14px 18px;margin-bottom:20px;}
   .warn-box .w-title{font-size:12px;font-weight:600;color:#C01545;margin-bottom:4px;}
   .warn-box .w-text{font-size:12px;color:var(--muted);line-height:1.6;}
-  .section-heading{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--navy);margin-bottom:6px;}
+  .section-heading{font-family:'Instrument Serif',serif;font-size:20px;font-weight:800;color:var(--navy);margin-bottom:6px;}
   .section-sub{font-size:13px;color:var(--muted);margin-bottom:24px;}
   .footer{background:var(--navy);color:rgba(255,255,255,0.4);text-align:center;padding:16px;font-size:11px;margin-top:40px;}
   .footer strong{color:rgba(255,255,255,0.7);}
@@ -130,9 +130,9 @@
 <div class="section active" id="vue-ensemble">
   <div class="section-heading">Vue d'ensemble du marché vétérinaire français</div>
   <div class="section-sub">Principaux indicateurs 2025 — chaque chiffre est sourcé et vérifiable</div>
-  <div class="warn-box"><div class="w-title">⚠️ Note de fiabilité — À lire avant diffusion</div><div class="w-text">Le CA de ~5,8 Mds€ provient de Medianimal (source secondaire) et est cohérent avec la fourchette Xerfi (4,1–6,5 Mds€ 2016–2025, rapport payant). Les données Mordor Intelligence (IA à 69,5 %) sont des estimations de cabinet d'études sans source primaire citée — à ne pas citer en externe. Les données Facco-Odoxa (animaux, médicalisation) sont issues d'une enquête robuste sur 10 000 personnes : elles sont fiables et citables.</div></div>
+  <div class="warn-box"><div class="w-title">⚠️ Note de fiabilité — À lire avant diffusion</div><div class="w-text">Le CA de ~5,8 milliards€ provient de Medianimal (source secondaire) et est cohérent avec la fourchette Xerfi (4,1–6,5 milliards€ 2016–2025, rapport payant). Les données Mordor Intelligence (IA à 69,5 %) sont des estimations de cabinet d'études sans source primaire citée — à ne pas citer en externe. Les données Facco-Odoxa (animaux, médicalisation) sont issues d'une enquête robuste sur 10 000 personnes : elles sont fiables et citables.</div></div>
   <div class="kpi-strip">
-    <div class="kpi-card blue"><div class="kpi-label">CA secteur 2025</div><div class="kpi-value">~5,8 Mds€</div><div class="kpi-sub">Services vétérinaires FR</div><div class="kpi-trend up">▲ +5 % vs 2024</div><div class="kpi-source">Medianimal 2025 / Xerfi ⚠ estimé</div></div>
+    <div class="kpi-card blue"><div class="kpi-label">CA secteur 2025</div><div class="kpi-value">~5,8 milliards€</div><div class="kpi-sub">Services vétérinaires FR</div><div class="kpi-trend up">▲ +5 % vs 2024</div><div class="kpi-source">Medianimal 2025 / Xerfi ⚠ estimé</div></div>
     <div class="kpi-card teal"><div class="kpi-label">Animaux de compagnie</div><div class="kpi-value">79 M</div><div class="kpi-sub">Total France</div><div class="kpi-trend up">▲ +4 M vs 2023</div><div class="kpi-source">Facco-Odoxa 2025 ✅</div></div>
     <div class="kpi-card green"><div class="kpi-label">Vétérinaires en exercice</div><div class="kpi-value">~21 000</div><div class="kpi-sub">Inscrits à l'Ordre</div><div class="kpi-trend up">▲ +16 % / 5 ans</div><div class="kpi-source">ONV / Medianimal 2025 ✅</div></div>
     <div class="kpi-card amber"><div class="kpi-label">Cliniques & cabinets</div><div class="kpi-value">8 303</div><div class="kpi-sub">Établissements (2023)</div><div class="kpi-trend up">▲ +50/an</div><div class="kpi-source">Businesscoot 2025 ✅</div></div>
@@ -140,7 +140,7 @@
   </div>
   <div class="grid-2">
     <div class="card">
-      <div class="card-title"><span class="dot blue"></span>Évolution du CA du secteur vétérinaire (Mds €)</div>
+      <div class="card-title"><span class="dot blue"></span>Évolution du CA du secteur vétérinaire (milliards €)</div>
       <div class="card-source">Source : <a href="https://www.xerfi.com/presentationetude/le-marche-des-soins-veterinaires_SME101" target="_blank">Xerfi</a> · <a href="https://medianimal.info/2025/08/17/le-marche-veterinaire-bilan-2025/" target="_blank">Medianimal 2025</a> · <a href="https://www.businesscoot.com/fr/etude/le-marche-des-veterinaires-france" target="_blank">Businesscoot</a> — ⚠ 2024 et 2025 sont des estimations</div>
       <canvas id="chartCA" height="220"></canvas>
     </div>
@@ -289,7 +289,7 @@
   <div class="warn-box"><div class="w-title">⚠️ Deux alertes importantes avant diffusion</div><div class="w-text"><strong>1. Parts de marché logiciels FR :</strong> Les chiffres Vétocom ~40 %, Bourgelat ~16 %... datent de 2010–2013 (La Semaine Vétérinaire). Aucune étude récente n'existe. Le graphique est purement indicatif — à ne pas utiliser en externe.<br><strong>2. TCAC du marché logiciel :</strong> Les différentes sources donnent des fourchettes très disparates (7,2 % à 12,7 %). À présenter comme une « fourchette estimée » plutôt qu'un chiffre précis.</div></div>
   <div class="kpi-strip">
     <div class="kpi-card blue"><div class="kpi-label">Marché mondial 2025</div><div class="kpi-value">~1,04 Md$</div><div class="kpi-sub">VPMS mondial</div><div class="kpi-trend up">▲ Forte croissance</div><div class="kpi-source"><a href="https://www.marketreportsworld.com/fr/market-reports/veterinary-practice-management-software-market-14713718" target="_blank">Market Reports World ⚠</a></div></div>
-    <div class="kpi-card teal"><div class="kpi-label">Projection 2034</div><div class="kpi-value">2,41 Mds$</div><div class="kpi-sub">Marché mondial</div><div class="kpi-trend up">▲ ×2,3 en 9 ans</div><div class="kpi-source"><a href="https://www.marketreportsworld.com/fr/market-reports/veterinary-practice-management-software-market-14713718" target="_blank">Market Reports World ⚠ proj.</a></div></div>
+    <div class="kpi-card teal"><div class="kpi-label">Projection 2034</div><div class="kpi-value">2,41 milliards$</div><div class="kpi-sub">Marché mondial</div><div class="kpi-trend up">▲ ×2,3 en 9 ans</div><div class="kpi-source"><a href="https://www.marketreportsworld.com/fr/market-reports/veterinary-practice-management-software-market-14713718" target="_blank">Market Reports World ⚠ proj.</a></div></div>
     <div class="kpi-card green"><div class="kpi-label">Cliniques FR adressables</div><div class="kpi-value">8 303</div><div class="kpi-sub">Établissements (2023)</div><div class="kpi-trend up">▲ +50/an</div><div class="kpi-source"><a href="https://www.businesscoot.com/fr/etude/le-marche-des-veterinaires-france" target="_blank">Businesscoot 2025 ✅</a></div></div>
     <div class="kpi-card amber"><div class="kpi-label">Logiciels qualifiés Calypso</div><div class="kpi-value">17</div><div class="kpi-sub">+ 10 en cours de test</div><div class="kpi-trend neutral">Marché fragmenté</div><div class="kpi-source"><a href="https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-2044/la-difficulte-de-choisir-un-logiciel-dans-un-marche-atomise.html" target="_blank">CNOV / La Semaine Vét. 2024 ✅</a></div></div>
     <div class="kpi-card red"><div class="kpi-label">TCAC estimé</div><div class="kpi-value">+7 à +13 %</div><div class="kpi-sub">Fourchette selon sources</div><div class="kpi-trend neutral">⚠ Sources divergentes</div><div class="kpi-source">Mordor / BRI / MRW — estimations</div></div>
@@ -367,12 +367,12 @@
       <table class="data-table">
         <thead><tr><th>Indicateur</th><th>2023</th><th>2025 (actuel)</th><th>2027 (proj.)</th><th>2030 (proj.)</th><th>TCAC</th><th>Confiance</th></tr></thead>
         <tbody>
-          <tr><td><strong>CA services vétérinaires FR</strong></td><td>~5,3 Mds€</td><td>~5,8 Mds€</td><td>~6,3 Mds€</td><td>~7,0 Mds€</td><td>+4 %/an</td><td><span class="pill med">⚠ Estimé</span></td></tr>
+          <tr><td><strong>CA services vétérinaires FR</strong></td><td>~5,3 milliards€</td><td>~5,8 milliards€</td><td>~6,3 milliards€</td><td>~7,0 milliards€</td><td>+4 %/an</td><td><span class="pill med">⚠ Estimé</span></td></tr>
           <tr><td><strong>Animaux de compagnie FR</strong></td><td>75 M</td><td>79 M</td><td>~81 M</td><td>~83 M</td><td>+1 %/an</td><td><span class="pill high">✅ Facco</span></td></tr>
           <tr><td><strong>Vétérinaires en exercice</strong></td><td>~21 000</td><td>~21 500</td><td>~22 500</td><td>~24 000</td><td>+2 %/an</td><td><span class="pill med">⚠ Estimé ONV</span></td></tr>
           <tr><td><strong>Part groupes (vét. canins)</strong></td><td>~15 %</td><td>~20 % (constaté)</td><td>~40 %</td><td>~55-65 %</td><td>Accél. forte</td><td><span class="pill warn">⚠ Projection Phylum</span></td></tr>
           <tr><td><strong>Taux assurance animale FR</strong></td><td>~10 %</td><td>~13 %</td><td>~17 %</td><td>~22-25 %</td><td>+10 %/an</td><td><span class="pill med">⚠ Estimé</span></td></tr>
-          <tr><td><strong>Marché logiciels vét. mondial</strong></td><td>~1,04 Mds$</td><td>~1,25 Mds$</td><td>~1,65 Mds$</td><td>~2,41 Mds$</td><td>+9,8 %/an</td><td><span class="pill warn">⚠ Cabinet études</span></td></tr>
+          <tr><td><strong>Marché logiciels vét. mondial</strong></td><td>~1,04 milliards$</td><td>~1,25 milliards$</td><td>~1,65 milliards$</td><td>~2,41 milliards$</td><td>+9,8 %/an</td><td><span class="pill warn">⚠ Cabinet études</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -380,7 +380,7 @@
   <div class="grid-3">
     <div class="card">
       <div class="card-title"><span class="dot blue"></span>Opportunités pour MYLAV</div>
-      <div class="insight-box green"><div class="i-title">✅ Marché porteur & résilient</div><div class="i-text">~5,8 Mds€ en croissance continue. Secteur anti-cyclique (soins essentiels, animaux considérés comme membres de la famille).</div></div>
+      <div class="insight-box green"><div class="i-title">✅ Marché porteur & résilient</div><div class="i-text">~5,8 milliards€ en croissance continue. Secteur anti-cyclique (soins essentiels, animaux considérés comme membres de la famille).</div></div>
       <div class="insight-box green"><div class="i-title">✅ 8 303 cliniques adressables</div><div class="i-text">+50 nouvelles/an. Renouvellement logiciel imposé par Calypso et facturation électronique obligatoire.</div></div>
       <div class="insight-box green"><div class="i-title">✅ Pénurie = besoin d'efficacité</div><div class="i-text">700 vétérinaires manquants/an dans le seul secteur canin. Automatisation et gain de temps = demande forte.</div></div>
     </div>
@@ -438,12 +438,12 @@
       <table class="data-table">
         <thead><tr><th>Source</th><th>Données</th><th>Limite & Lien</th></tr></thead>
         <tbody>
-          <tr><td><strong>Medianimal 2025</strong></td><td>CA 5,8 Mds€, ~70 % femmes, croissance</td><td>Pas de méthodologie publiée · <a href="https://medianimal.info/2025/08/17/le-marche-veterinaire-bilan-2025/" target="_blank">→ lien</a></td></tr>
-          <tr><td><strong>Xerfi (payant)</strong></td><td>4,1→6,5 Mds€, ~6 600 cliniques actives</td><td>Rapport payant, données partielles · <a href="https://www.xerfi.com/presentationetude/le-marche-des-soins-veterinaires_SME101" target="_blank">→ lien</a></td></tr>
+          <tr><td><strong>Medianimal 2025</strong></td><td>CA 5,8 milliards€, ~70 % femmes, croissance</td><td>Pas de méthodologie publiée · <a href="https://medianimal.info/2025/08/17/le-marche-veterinaire-bilan-2025/" target="_blank">→ lien</a></td></tr>
+          <tr><td><strong>Xerfi (payant)</strong></td><td>4,1→6,5 milliards€, ~6 600 cliniques actives</td><td>Rapport payant, données partielles · <a href="https://www.xerfi.com/presentationetude/le-marche-des-soins-veterinaires_SME101" target="_blank">→ lien</a></td></tr>
           <tr><td><strong>Mordor Intelligence</strong></td><td>CA France, IA 69,5 %, consultation 30 €</td><td>Sources primaires non citées · <a href="https://www.mordorintelligence.com/fr/industry-reports/france-veterinary-healthcare-market-industry" target="_blank">→ lien</a></td></tr>
           <tr><td><strong>Market Reports World</strong></td><td>VPMS mondial 1,04 Md$, TCAC 9,8 %</td><td>Méthodologie opaque · <a href="https://www.marketreportsworld.com/fr/market-reports/veterinary-practice-management-software-market-14713718" target="_blank">→ lien</a></td></tr>
-          <tr><td><strong>Business Research Insights</strong></td><td>VPMS 1,52 Md$ 2026 → 4,57 Mds$ 2035, +12,7 %</td><td>Projection haute · <a href="https://www.businessresearchinsights.com/fr/market-reports/veterinary-practice-management-software-market-118947" target="_blank">→ lien</a></td></tr>
-          <tr><td><strong>Spherical Insights</strong></td><td>Assurance animale FR 1,8 Md$ → 4,9 Mds$ 2033</td><td>Cabinet études tiers · <a href="https://www.sphericalinsights.com/fr/reports/france-pet-insurance-market" target="_blank">→ lien</a></td></tr>
+          <tr><td><strong>Business Research Insights</strong></td><td>VPMS 1,52 Md$ 2026 → 4,57 milliards$ 2035, +12,7 %</td><td>Projection haute · <a href="https://www.businessresearchinsights.com/fr/market-reports/veterinary-practice-management-software-market-118947" target="_blank">→ lien</a></td></tr>
+          <tr><td><strong>Spherical Insights</strong></td><td>Assurance animale FR 1,8 milliard$ → 4,9 milliards$ 2033</td><td>Cabinet études tiers · <a href="https://www.sphericalinsights.com/fr/reports/france-pet-insurance-market" target="_blank">→ lien</a></td></tr>
           <tr><td><strong>Assurland / Hellosafe</strong></td><td>+70 % frais vét. en 15 ans, ~6 % assurés</td><td>Sites comparateurs · <a href="https://hellosafe.fr/assurance-animaux" target="_blank">→ lien</a></td></tr>
           <tr><td><strong>Propulse by CA</strong></td><td>50 % réseaux d'ici 2025 (projection)</td><td>Estimation prospective · <a href="https://propulsebyca.fr/idees-business/veterinaire/etude-marche" target="_blank">→ lien</a></td></tr>
           <tr><td><strong>La Semaine Vét. n°1534 (2013)</strong></td><td>Vétocom ~40 % pdm</td><td>⚠ Donnée 2012 · <a href="https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/archives/n-1534/logiciels-de-gestion-de-cabinet-nouveaux-services-nouveaux-acteurs.html" target="_blank">→ lien</a></td></tr>
@@ -464,7 +464,7 @@
         <tr><td>8 303 établissements vétérinaires (2023)</td><td><span class="pill high">✅ Fiable</span></td><td>Utilisable — source Businesscoot / Ordre</td></tr>
         <tr><td>Consultation de base à 30 € (depuis janv. 2025)</td><td><span class="pill high">✅ Fiable</span></td><td>Utilisable — arrêté ministériel</td></tr>
         <tr><td>17 logiciels qualifiés Calypso (CNOV 2024)</td><td><span class="pill high">✅ Fiable</span></td><td>Utilisable — CNOV via La Semaine Vétérinaire 2024</td></tr>
-        <tr><td>~5,8 Mds€ CA secteur vétérinaire 2025</td><td><span class="pill med">⚠ Estimé</span></td><td>Citer comme « estimé à ~5,8 Mds€ » avec source Medianimal</td></tr>
+        <tr><td>~5,8 milliards€ CA secteur vétérinaire 2025</td><td><span class="pill med">⚠ Estimé</span></td><td>Citer comme « estimé à ~5,8 milliards€ » avec source Medianimal</td></tr>
         <tr><td>~950 établissements en groupes d'investisseurs</td><td><span class="pill med">⚠ Estimé</span></td><td>Citer avec la source Phylum/Agra Presse</td></tr>
         <tr><td>50 % vétérinaires canins en groupes d'ici fin 2025</td><td><span class="pill warn">⚠ Prospectif</span></td><td>Présenter comme « projection Phylum », non comme fait établi</td></tr>
         <tr><td>Parts de marché logiciels (Vétocom 40 %...)</td><td><span class="pill low">❌ Périmé</span></td><td>Ne pas diffuser — données 2010-2013, non actualisées</td></tr>
@@ -491,11 +491,11 @@ function showSection(id){
 const B='#1B4F8A',T='#00B4D8',G='#06D6A0',A='#FFB703',R='#EF476F',AC='#2E86AB';
 const ci={};
 function mc(id,cfg){const c=document.getElementById(id);if(!c)return;if(ci[id])ci[id].destroy();ci[id]=new Chart(c,cfg);}
-Chart.defaults.font={family:'Inter',size:12};Chart.defaults.color='#607080';
+Chart.defaults.font={family:'DM Sans',size:12};Chart.defaults.color='#607080';
 function initCharts(){
   const id=document.querySelector('.section.active')?.id;
   if(id==='vue-ensemble'){
-    mc('chartCA',{type:'bar',data:{labels:['2016','2018','2020','2022','2024 ⚠','2025 ⚠'],datasets:[{label:'CA (Mds €)',data:[4.1,4.5,4.8,5.1,5.5,5.8],backgroundColor:[B,B,B,B,A,A],borderRadius:6}]},options:{plugins:{legend:{display:false},title:{display:true,text:'⚠ 2024 et 2025 = estimations (Medianimal / Xerfi)',color:'#B45309',font:{size:11}}},scales:{y:{beginAtZero:false,min:3.5,ticks:{callback:v=>v+'Md'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
+    mc('chartCA',{type:'bar',data:{labels:['2016','2018','2020','2022','2024 ⚠','2025 ⚠'],datasets:[{label:'CA (milliards €)',data:[4.1,4.5,4.8,5.1,5.5,5.8],backgroundColor:[B,B,B,B,A,A],borderRadius:6}]},options:{plugins:{legend:{display:false},title:{display:true,text:'⚠ 2024 et 2025 = estimations (Medianimal / Xerfi)',color:'#B45309',font:{size:11}}},scales:{y:{beginAtZero:false,min:3.5,ticks:{callback:v=>v+' Md€'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
     mc('chartRepartition',{type:'doughnut',data:{labels:['Animaux de compagnie (>70%)','Animaux de rente (~22%)','Équidés (~8%)'],datasets:[{data:[70,22,8],backgroundColor:[B,T,A],borderWidth:0,hoverOffset:8}]},options:{cutout:'65%',plugins:{legend:{position:'bottom',labels:{padding:16,font:{size:12}}}}}});
     mc('chartBudget',{type:'bar',data:{labels:['Alimentation ✅','Santé ⚠','Autres ⚠'],datasets:[{label:'Chien',data:[490,584,300],backgroundColor:B,borderRadius:5},{label:'Chat',data:[316,429,180],backgroundColor:T,borderRadius:5}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v+'€'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
   }
@@ -509,12 +509,12 @@ function initCharts(){
     mc('chartGeo',{type:'bar',data:{labels:['AuRA','Nouv. Aquitaine','Île-de-France','Occitanie','PACA','Grand Est','Bretagne','Normandie'],datasets:[{label:'Établissements (estimation proportionnelle)',data:[1200,1050,950,820,680,650,580,520],backgroundColor:[B,B,B,B,B,B,B,B],borderRadius:6}]},options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'⚠ Estimations proportionnelles — données officielles par région non publiées',color:'#C01545',font:{size:11}}},scales:{x:{grid:{color:'#EDF2F7'}},y:{grid:{display:false}}}}});
   }
   if(id==='logiciels'){
-    mc('chartLogiciels',{type:'line',data:{labels:['2022 ✅','2023 ✅','2024 ✅','2025','2026','2028','2030','2034'],datasets:[{label:'Marché mondial VPMS (Mds $)',data:[0.85,1.05,1.25,1.52,1.72,2.10,2.55,4.57],borderColor:B,backgroundColor:'rgba(27,79,138,0.08)',fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:(ctx)=>ctx.dataIndex<=2?G:A}]},options:{plugins:{legend:{display:false},title:{display:true,text:'Vert = données constatées · Orange = projections cabinets études (à prendre avec prudence)',color:'#607080',font:{size:11}}},scales:{y:{ticks:{callback:v=>v+'Md$'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
+    mc('chartLogiciels',{type:'line',data:{labels:['2022 ✅','2023 ✅','2024 ✅','2025','2026','2028','2030','2034'],datasets:[{label:'Marché mondial VPMS (milliards $)',data:[0.85,1.05,1.25,1.52,1.72,2.10,2.55,4.57],borderColor:B,backgroundColor:'rgba(27,79,138,0.08)',fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:(ctx)=>ctx.dataIndex<=2?G:A}]},options:{plugins:{legend:{display:false},title:{display:true,text:'Vert = données constatées · Orange = projections cabinets études (à prendre avec prudence)',color:'#607080',font:{size:11}}},scales:{y:{ticks:{callback:v=>v+'milliards$'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
     mc('chartPdmLogiciels',{type:'doughnut',data:{labels:["Vétocom (~40 % en 2013)",'AssistoVet',"Bourgelat (~16 % en 2012)","Vet'Phi (~9 % en 2010)",'Epivet','Dr.Veto','Koudou','Autres / Intl.'],datasets:[{data:[32,18,14,8,9,7,5,7],backgroundColor:[B,T,AC,A,G,'#9B59B6',R,'#95A5A6'],borderWidth:0,hoverOffset:8}]},options:{cutout:'55%',plugins:{legend:{position:'right',labels:{padding:8,font:{size:10}}},title:{display:true,text:'⚠ INDICATIF UNIQUEMENT — Données 2010-2013 (La Semaine Vétérinaire)',color:'#C01545',font:{size:11,weight:'bold'}}}}});
   }
   if(id==='projections'){
-    mc('chartProjectionCA',{type:'line',data:{labels:['2020','2022','2024','2025','2026','2027','2028','2029','2030'],datasets:[{label:'CA constaté / estimé',data:[4.8,5.1,5.5,5.8,null,null,null,null,null],borderColor:B,backgroundColor:'rgba(27,79,138,0.05)',fill:true,tension:0.3,pointRadius:5},{label:'Projection tendancielle +4%/an',data:[null,null,null,5.8,6.0,6.3,6.5,6.8,7.1],borderColor:T,borderDash:[6,3],backgroundColor:'rgba(0,180,216,0.05)',fill:true,tension:0.3,pointRadius:5}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{min:4,ticks:{callback:v=>v+'Md€'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
-    mc('chartProjectionLog',{type:'line',data:{labels:['2022','2024','2025','2026','2028','2030','2034'],datasets:[{label:'Données constatées',data:[0.85,1.05,1.25,null,null,null,null],borderColor:B,backgroundColor:'rgba(27,79,138,0.05)',fill:true,tension:0.4,pointRadius:5},{label:'Projection (scénario médian)',data:[null,null,1.25,1.52,2.10,2.55,4.57],borderColor:G,borderDash:[6,3],backgroundColor:'rgba(6,214,160,0.05)',fill:true,tension:0.4,pointRadius:5}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{min:0,ticks:{callback:v=>v+'Md$'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
+    mc('chartProjectionCA',{type:'line',data:{labels:['2020','2022','2024','2025','2026','2027','2028','2029','2030'],datasets:[{label:'CA constaté / estimé',data:[4.8,5.1,5.5,5.8,null,null,null,null,null],borderColor:B,backgroundColor:'rgba(27,79,138,0.05)',fill:true,tension:0.3,pointRadius:5},{label:'Projection tendancielle +4%/an',data:[null,null,null,5.8,6.0,6.3,6.5,6.8,7.1],borderColor:T,borderDash:[6,3],backgroundColor:'rgba(0,180,216,0.05)',fill:true,tension:0.3,pointRadius:5}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{min:4,ticks:{callback:v=>v+'milliard€'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
+    mc('chartProjectionLog',{type:'line',data:{labels:['2022','2024','2025','2026','2028','2030','2034'],datasets:[{label:'Données constatées',data:[0.85,1.05,1.25,null,null,null,null],borderColor:B,backgroundColor:'rgba(27,79,138,0.05)',fill:true,tension:0.4,pointRadius:5},{label:'Projection (scénario médian)',data:[null,null,1.25,1.52,2.10,2.55,4.57],borderColor:G,borderDash:[6,3],backgroundColor:'rgba(6,214,160,0.05)',fill:true,tension:0.4,pointRadius:5}]},options:{plugins:{legend:{position:'bottom'}},scales:{y:{min:0,ticks:{callback:v=>v+'milliards$'},grid:{color:'#EDF2F7'}},x:{grid:{display:false}}}}});
   }
 }
 setTimeout(initCharts,100);
